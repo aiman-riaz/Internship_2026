@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Medical Interface</title>
+  <style>
+    body { font-family: Arial; background: #f4f6f8; }
+    .box { background: white; padding: 15px; margin: 15px auto; width: 80%; }
+    button { padding: 6px 10px; margin-top: 5px; }
+    .emergency { background: red; color: white; width: 100%; }
+  </style>
+</head>
+<body>
+<div class="box">
+  <h2>Patient Dashboard</h2>
+  <p>Name:AA</p>
+  <p>Status:Encrypted</p>
+</div>
+<div class="box">
+  <h2>Medical History</h2>
+  <p>
+  2024–Blood Test–Apollo 
+  <button onclick="alert('Record is locked. Viewing.')">
+    View
+  </button>
+</p>
+<p>
+  2023–MRI–Indiana
+  <button onclick="alert('Record is locked. Viewing.')">
+    View
+  </button>
+</p>
+</div>
+<div class="box">
+  <button class="emergency" onclick="alert('Emergency Access Active for 10 minutes')">
+    Emergency Access
+  </button>
+</div>
+</body>
+</html>
