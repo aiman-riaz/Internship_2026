@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Kanban Board</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f6f8;
+      padding: 20px;
+    }
+    .board {
+      display: flex;
+      gap: 20px;
+    }
+    .column {
+      background: white;
+      padding: 10px;
+      width: 200px;
+      min-height: 200px;
+    }
+    .task {
+      background: #dfe6e9;
+      padding: 5px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+<h2>Kanban Board</h2>
+<input id="taskInput" placeholder="Enter task" />
+<button onclick="addTask()">Add</button>
+<div class="board">
+  <div class="column">
+    <h3>Todo</h3>
+    <div id="todo"></div>
+  </div>
+  <div class="column">
+    <h3>Doing</h3>
+    <div id="doing"></div>
+  </div>
+  <div class="column">
+    <h3>Done</h3>
+    <div id="done"></div>
+  </div>
+</div>
+<script>
+function addTask() {
+  let text = taskInput.value;
+  if (text === "") return;
+  let div = document.createElement("div");
+  div.className = "task";
+  div.innerText = text;
+  document.getElementById("todo").appendChild(div);
+  taskInput.value = "";
+}
+</script>
+</body>
+</html>
