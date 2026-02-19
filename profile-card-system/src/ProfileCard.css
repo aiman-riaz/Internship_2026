@@ -1,0 +1,31 @@
+.card {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  background: rgb(241, 148, 148);
+}
+
+.role {
+  color: gray;
+  margin: 5px 0;
+}
+
+.desc {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 4px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
