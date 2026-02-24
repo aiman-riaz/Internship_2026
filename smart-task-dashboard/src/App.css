@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  min-height: 100vh;
+}
+.app {
+  padding: 30px;
+  text-align: center;
+}
+.form input,
+.form select {
+  margin: 5px;
+  padding: 6px;
+}
+.filters {
+  margin: 20px 0;
+}
+.task {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px auto;
+  width: 300px;
+  border-radius: 6px;
+}
+.task.ToDo { border-left: 5px solid rgb(255, 0, 0); }
+.task.InProgress { border-left: 5px solid rgb(238, 255, 0); }
+.task.Completed { border-left: 5px solid green; }
+.summary {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
